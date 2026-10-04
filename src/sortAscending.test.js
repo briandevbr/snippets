@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import sortAscending from "./src/sortAscending.js";
+import sortAscending from "./sortAscending.js";
 
 describe("sortAscending", () => {
   it("ordena os números em ordem crescente", () => {
