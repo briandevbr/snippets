@@ -14,7 +14,3 @@ const sortAscending = (arr) => {
   }
   return { arrOriginal: arr, sortAscending: [...arr].sort((a, b) => a - b) };
 };
-
-const arr = [9, 7, 5, 2, 3, 4, 6, 1, 8];
-
-console.log(sortAscending(arr));
