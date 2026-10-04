@@ -8,11 +8,11 @@
 
 [![Stack](https://skillicons.dev/icons?i=js,nodejs,git,github)](#️-tecnologias-usadas)
 
-`JavaScript puro · 0 dependências · licença não especificada`
+`JavaScript puro · 0 dependências de runtime · testes com Vitest · ISC`
 
 </div>
 
-Coleção pessoal de funções JavaScript utilitárias, pensadas para serem copiadas e reaproveitadas em outros projetos. Cada snippet é independente, sem dependências externas, e cresce conforme novas funções vão sendo adicionadas.
+Coleção pessoal de funções JavaScript utilitárias, pensadas para serem copiadas e reaproveitadas em outros projetos. Cada snippet é independente, sem dependências de runtime, e acompanhado de testes automatizados com [Vitest](https://vitest.dev/).
 
 ---
 
@@ -22,6 +22,7 @@ Coleção pessoal de funções JavaScript utilitárias, pensadas para serem copi
 - [🗂️ Estrutura do Projeto - tree](#️-estrutura-do-projeto---tree)
 - [⚙️ Tecnologias usadas](#️-tecnologias-usadas)
 - [🚀 Como rodar](#-como-rodar)
+- [🧪 Testes](#-testes)
 - [✨ Funcionalidades](#-funcionalidades)
 - [🤝 Contribuindo](#-contribuindo)
 - [📄 Licença](#-licença)
@@ -32,8 +33,12 @@ Coleção pessoal de funções JavaScript utilitárias, pensadas para serem copi
 
 | Caminho | Descrição |
 |---|---|
-| `sortAscending.js` | Recebe um array, valida se é composto só por inteiros e retorna um objeto com o array original e uma cópia ordenada de forma ascendente |
-| `.gitignore` | Ignora o `tempCodeRunnerFile.js`, arquivo de rascunho gerado pela extensão Code Runner do VSCode |
+| `src/sortAscending.js` | Recebe um array, valida se é composto só por inteiros e retorna um objeto com o array original e uma cópia ordenada de forma ascendente |
+| `sortAscending.test.js` | Suíte de testes ([Vitest](https://vitest.dev/)) com 5 casos: ordenação, imutabilidade do array original, números negativos/de vários dígitos e os dois caminhos de erro |
+| `package.json` | Metadados do projeto e script `npm test` (Vitest) |
+| `package-lock.json` | Lockfile das dependências instaladas pelo npm |
+| `.gitignore` | Ignora `node_modules/`, o arquivo de rascunho do Code Runner (`tempCodeRunnerFile.*`) e o relatório de cobertura (`coverage/`) |
+| `LICENSE` | Texto da licença ISC |
 | `README.md` | Este documento, em português |
 | `README.en.md` | Versão em inglês deste documento |
 
@@ -43,18 +48,24 @@ Coleção pessoal de funções JavaScript utilitárias, pensadas para serem copi
 
 ```
 🗂️
+├── 📁 src
+│  └── ⚙️ sortAscending.js
 ├── 🔧 .gitignore
+├── 🗒️ LICENSE
+├── 📦 package-lock.json
+├── 📦 package.json
 ├── 🇺🇸 README.en.md
 ├── 🇧🇷 README.md
-└── ⚙️ sortAscending.js
+└── 🧪 sortAscending.test.js
 ```
 
 ---
 
 ## ⚙️ Tecnologias usadas
 
-- [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript) (ES6+) — linguagem de implementação de todos os snippets, sem dependências externas
-- [Node.js](https://nodejs.org/) — usado para testar as funções localmente
+- [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript) (ES6+ / ESM) — linguagem de implementação de todos os snippets, sem dependências de runtime
+- [Node.js](https://nodejs.org/) — runtime usado para rodar os snippets e a suíte de testes
+- [Vitest](https://vitest.dev/) — framework de testes usado em `sortAscending.test.js`
 
 ---
 
@@ -67,11 +78,11 @@ git clone https://github.com/briandevbr/snippets.git
 cd snippets
 ```
 
-Os snippets não são um pacote instalável — a ideia é copiar a função para o seu projeto. Para testar rapidamente sem copiar nada, cole o conteúdo do arquivo direto no Node:
+Os snippets não são um pacote instalável — a ideia é copiar a função para o seu projeto. Para testar o `sortAscending` rapidamente sem copiar nada, importe o arquivo direto num script ESM:
 
 ```bash
-node -e "
-$(cat sortAscending.js)
+node --input-type=module -e "
+import sortAscending from './src/sortAscending.js';
 console.log(sortAscending([5, 3, 9, 1, 4]));
 "
 ```
@@ -90,13 +101,27 @@ Se a entrada não for um array de inteiros, a função não lança exceção —
 
 ---
 
+## 🧪 Testes
+
+```bash
+npm install
+npm test
+```
+
+A suíte (`sortAscending.test.js`, via Vitest) cobre 5 casos: ordenação crescente, não alteração do array original, números negativos e de vários dígitos, e os dois caminhos de erro (entrada que não é array, entrada com elemento não inteiro).
+
+> ⚠️ O Vitest 5 declara em seu `package.json` o requisito `node: ^22.12.0 || ^24.0.0 || >=26.0.0`. Em versões mais antigas do Node (ex.: 18.x), `npm test` falha na inicialização — isso não afeta o uso direto do snippet, apenas a suíte de testes.
+
+---
+
 ## ✨ Funcionalidades
 
-**Progresso: 3 de 4 etapas concluídas**
+**Progresso: 4 de 5 etapas concluídas**
 
 - [x] Validação de entrada (precisa ser um array e todos os elementos precisam ser inteiros)
 - [x] Ordenação ascendente sem alterar o array original (`sort` roda sobre uma cópia feita com spread)
 - [x] Retorno de erro descritivo em vez de exceção não tratada
+- [x] Suíte de testes automatizados com Vitest
 - [ ] Novos snippets utilitários da coleção (em planejamento)
 
 ---
@@ -109,7 +134,7 @@ Projeto pessoal de treino — sem processo de contribuição externa no momento.
 
 ## 📄 Licença
 
-Licença não especificada.
+[ISC](https://opensource.org/license/isc-license-txt/) — veja o arquivo [`LICENSE`](./LICENSE).
 
 ---
 
