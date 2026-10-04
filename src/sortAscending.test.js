@@ -30,4 +30,10 @@ describe("sortAscending", () => {
       error: "It must be an array consisting entirely of integers.",
     });
   });
+
+  it("retorna erro quando há um espaço em branco dentro do array", () => {
+    expect(sortAscending([1, , 3])).toEqual({
+      error: "It must be an array consisting entirely of integers.",
+    });
+  });
 });
