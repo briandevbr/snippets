@@ -14,3 +14,5 @@ const sortAscending = (arr) => {
   }
   return { arrOriginal: arr, sortAscending: [...arr].sort((a, b) => a - b) };
 };
+
+export default sortAscending;

@@ -1,1 +1,8 @@
-tempCodeRunnerFile.js
+# Dependências instaladas pelo npm (recriadas com `npm install`)
+node_modules/
+
+# Arquivo temporário do Code Runner (VS Code)
+tempCodeRunnerFile.*
+
+# Relatório de cobertura de testes (gerado por `vitest --coverage`)
+coverage/

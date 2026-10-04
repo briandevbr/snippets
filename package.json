@@ -1,0 +1,24 @@
+{
+  "name": "snippets",
+  "version": "1.0.0",
+  "description": "<div align=\"center\">",
+  "main": "sortAscending.js",
+  "scripts": {
+    "test": "vitest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/briandevbr/snippets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/briandevbr/snippets/issues"
+  },
+  "homepage": "https://github.com/briandevbr/snippets#readme",
+  "devDependencies": {
+    "vitest": "^5.0.3"
+  }
+}
