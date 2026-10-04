@@ -109,7 +109,6 @@ npm test
 ```
 
 The suite (`sortAscending.test.js`, via Vitest) covers 6 cases: ascending sort, non-mutation of the original array, negative and multi-digit numbers, and all three error paths (input that isn't an array, input with a non-integer element, input with a blank spot inside the array).
-The suite (`sortAscending.test.js`, via Vitest) covers 6 cases: ascending sort, non-mutation of the original array, negative and multi-digit numbers, and all three error paths (input that isn't an array, input with a non-integer element, input with a blank spot inside the array).
 
 > ⚠️ Vitest 5's own `package.json` declares `node: ^22.12.0 || ^24.0.0 || >=26.0.0`. On older Node versions (e.g. 18.x), `npm test` fails to even start — this doesn't affect using the snippet directly, only the test suite.
 

@@ -34,11 +34,7 @@ Coleção pessoal de funções JavaScript utilitárias, pensadas para serem copi
 | Caminho | Descrição |
 |---|---|
 | `src/sortAscending.js` | Recebe um array, valida se é composto só por inteiros e retorna um objeto com o array original e uma cópia ordenada de forma ascendente |
-<<<<<<< HEAD
-| `sortAscending.test.js` | Suíte de testes ([Vitest](https://vitest.dev/)) com 6 casos: ordenação, imutabilidade do array original, números negativos/de vários dígitos e os três caminhos de erro (não é array, elemento não inteiro, espaço em branco dentro do array) |
-=======
 | `src/sortAscending.test.js` | Suíte de testes ([Vitest](https://vitest.dev/)) com 6 casos: ordenação, imutabilidade do array original, números negativos/de vários dígitos e os três caminhos de erro (não é array, elemento não inteiro, espaço em branco dentro do array) |
->>>>>>> 14704ca (docs: updates the READMEs)
 | `package.json` | Metadados do projeto e script `npm test` (Vitest) |
 | `package-lock.json` | Lockfile das dependências instaladas pelo npm |
 | `.gitignore` | Ignora `node_modules/`, o arquivo de rascunho do Code Runner (`tempCodeRunnerFile.*`) e o relatório de cobertura (`coverage/`) |
