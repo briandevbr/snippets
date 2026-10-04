@@ -34,7 +34,11 @@ Coleção pessoal de funções JavaScript utilitárias, pensadas para serem copi
 | Caminho | Descrição |
 |---|---|
 | `src/sortAscending.js` | Recebe um array, valida se é composto só por inteiros e retorna um objeto com o array original e uma cópia ordenada de forma ascendente |
-| `sortAscending.test.js` | Suíte de testes ([Vitest](https://vitest.dev/)) com 5 casos: ordenação, imutabilidade do array original, números negativos/de vários dígitos e os dois caminhos de erro |
+<<<<<<< HEAD
+| `sortAscending.test.js` | Suíte de testes ([Vitest](https://vitest.dev/)) com 6 casos: ordenação, imutabilidade do array original, números negativos/de vários dígitos e os três caminhos de erro (não é array, elemento não inteiro, espaço em branco dentro do array) |
+=======
+| `src/sortAscending.test.js` | Suíte de testes ([Vitest](https://vitest.dev/)) com 6 casos: ordenação, imutabilidade do array original, números negativos/de vários dígitos e os três caminhos de erro (não é array, elemento não inteiro, espaço em branco dentro do array) |
+>>>>>>> 14704ca (docs: updates the READMEs)
 | `package.json` | Metadados do projeto e script `npm test` (Vitest) |
 | `package-lock.json` | Lockfile das dependências instaladas pelo npm |
 | `.gitignore` | Ignora `node_modules/`, o arquivo de rascunho do Code Runner (`tempCodeRunnerFile.*`) e o relatório de cobertura (`coverage/`) |
@@ -49,14 +53,14 @@ Coleção pessoal de funções JavaScript utilitárias, pensadas para serem copi
 ```
 🗂️
 ├── 📁 src
-│  └── ⚙️ sortAscending.js
+│  ├── ⚙️ sortAscending.js
+│  └── 🧪 sortAscending.test.js
 ├── 🔧 .gitignore
 ├── 🗒️ LICENSE
 ├── 📦 package-lock.json
 ├── 📦 package.json
 ├── 🇺🇸 README.en.md
-├── 🇧🇷 README.md
-└── 🧪 sortAscending.test.js
+└── 🇧🇷 README.md
 ```
 
 ---
@@ -108,7 +112,7 @@ npm install
 npm test
 ```
 
-A suíte (`sortAscending.test.js`, via Vitest) cobre 5 casos: ordenação crescente, não alteração do array original, números negativos e de vários dígitos, e os dois caminhos de erro (entrada que não é array, entrada com elemento não inteiro).
+A suíte (`sortAscending.test.js`, via Vitest) cobre 6 casos: ordenação crescente, não alteração do array original, números negativos e de vários dígitos, e os três caminhos de erro (entrada que não é array, entrada com elemento não inteiro, array com espaço em branco/posição vazia).
 
 > ⚠️ O Vitest 5 declara em seu `package.json` o requisito `node: ^22.12.0 || ^24.0.0 || >=26.0.0`. Em versões mais antigas do Node (ex.: 18.x), `npm test` falha na inicialização — isso não afeta o uso direto do snippet, apenas a suíte de testes.
 

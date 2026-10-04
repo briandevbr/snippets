@@ -31,16 +31,16 @@ Personal collection of JavaScript utility functions, meant to be copied and reus
 
 ## 🗂️ Project Structure
 
-| Path | Description |
-|---|---|
-| `src/sortAscending.js` | Takes an array, validates that it only contains integers, and returns an object with the original array plus a sorted (ascending) copy |
-| `sortAscending.test.js` | Test suite ([Vitest](https://vitest.dev/)) with 5 cases: sorting, immutability of the original array, negative/multi-digit numbers, and both error paths |
-| `package.json` | Project metadata and the `npm test` script (Vitest) |
-| `package-lock.json` | Lockfile for the dependencies installed by npm |
-| `.gitignore` | Ignores `node_modules/`, the Code Runner scratch file (`tempCodeRunnerFile.*`), and the test coverage report (`coverage/`) |
-| `LICENSE` | ISC license text |
-| `README.md` | This document, in Portuguese |
-| `README.en.md` | English version of this document |
+| Path                        | Description                                                                                                                                                                                                                    |
+| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `src/sortAscending.js`      | Takes an array, validates that it only contains integers, and returns an object with the original array plus a sorted (ascending) copy                                                                                         |
+| `src/sortAscending.test.js` | Test suite ([Vitest](https://vitest.dev/)) with 6 cases: sorting, immutability of the original array, negative/multi-digit numbers, and all three error paths (not an array, non-integer element, blank spot inside the array) |
+| `package.json`              | Project metadata and the `npm test` script (Vitest)                                                                                                                                                                            |
+| `package-lock.json`         | Lockfile for the dependencies installed by npm                                                                                                                                                                                 |
+| `.gitignore`                | Ignores `node_modules/`, the Code Runner scratch file (`tempCodeRunnerFile.*`), and the test coverage report (`coverage/`)                                                                                                     |
+| `LICENSE`                   | ISC license text                                                                                                                                                                                                               |
+| `README.md`                 | This document, in Portuguese                                                                                                                                                                                                   |
+| `README.en.md`              | English version of this document                                                                                                                                                                                               |
 
 ---
 
@@ -49,14 +49,14 @@ Personal collection of JavaScript utility functions, meant to be copied and reus
 ```
 🗂️
 ├── 📁 src
-│  └── ⚙️ sortAscending.js
+│  ├── ⚙️ sortAscending.js
+│  └── 🧪 sortAscending.test.js
 ├── 🔧 .gitignore
 ├── 🗒️ LICENSE
 ├── 📦 package-lock.json
 ├── 📦 package.json
 ├── 🇺🇸 README.en.md
-├── 🇧🇷 README.md
-└── 🧪 sortAscending.test.js
+└── 🇧🇷 README.md
 ```
 
 ---
@@ -108,7 +108,8 @@ npm install
 npm test
 ```
 
-The suite (`sortAscending.test.js`, via Vitest) covers 5 cases: ascending sort, non-mutation of the original array, negative and multi-digit numbers, and both error paths (input that isn't an array, input with a non-integer element).
+The suite (`sortAscending.test.js`, via Vitest) covers 6 cases: ascending sort, non-mutation of the original array, negative and multi-digit numbers, and all three error paths (input that isn't an array, input with a non-integer element, input with a blank spot inside the array).
+The suite (`sortAscending.test.js`, via Vitest) covers 6 cases: ascending sort, non-mutation of the original array, negative and multi-digit numbers, and all three error paths (input that isn't an array, input with a non-integer element, input with a blank spot inside the array).
 
 > ⚠️ Vitest 5's own `package.json` declares `node: ^22.12.0 || ^24.0.0 || >=26.0.0`. On older Node versions (e.g. 18.x), `npm test` fails to even start — this doesn't affect using the snippet directly, only the test suite.
 
