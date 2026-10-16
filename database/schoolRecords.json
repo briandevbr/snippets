@@ -1,0 +1,158 @@
+{
+  "configuracao": { "mediaAprovacao": 7, "anoLetivo": 2026 },
+  "disciplinas": {
+    "matematica": [
+      { "id": "01891030", "aluno": "David", "idade": 18, "notas": [9, 8, 5] },
+      {
+        "id": "01892040",
+        "aluno": "Ana",
+        "idade": 17,
+        "notas": [10, 9.5, 8.5]
+      },
+      { "id": "01893060", "aluno": "Lucas", "idade": 19, "notas": [4, 5.5, 6] },
+      { "id": "01894070", "aluno": "Beatriz", "idade": 20, "notas": [7, 7, 7] },
+      {
+        "id": "01895080",
+        "aluno": "Rafael",
+        "idade": 21,
+        "notas": [3, 2.5, 4]
+      },
+      {
+        "id": "01896090",
+        "aluno": "Juliana",
+        "idade": 18,
+        "notas": [8, 9, 7.5]
+      },
+      { "id": "01897100", "aluno": "Pedro", "idade": 19, "notas": [0, 6, 5] },
+      {
+        "id": "01898110",
+        "aluno": "Marina",
+        "idade": 17,
+        "notas": [6.5, 7.5, 8]
+      }
+    ],
+    "ingles": [
+      { "id": "01891030", "aluno": "David", "idade": 18, "notas": [8.5, 7, 9] },
+      { "id": "01892040", "aluno": "Ana", "idade": 17, "notas": [9, 8, 10] },
+      { "id": "01893060", "aluno": "Lucas", "idade": 19, "notas": [5, 6, 4.5] },
+      { "id": "01894070", "aluno": "Beatriz", "idade": 20, "notas": [6, 7, 8] },
+      {
+        "id": "01896090",
+        "aluno": "Juliana",
+        "idade": 18,
+        "notas": [10, 10, 9.5]
+      },
+      {
+        "id": "01897100",
+        "aluno": "Pedro",
+        "idade": 19,
+        "notas": [7.5, 6.5, 7]
+      },
+      {
+        "id": "01898110",
+        "aluno": "Marina",
+        "idade": 17,
+        "notas": [5.5, 6, 6.5]
+      }
+    ],
+    "historia": [
+      { "id": "01891030", "aluno": "David", "idade": 18, "notas": [7, 6.5, 8] },
+      { "id": "01892040", "aluno": "Ana", "idade": 17, "notas": [8.5, 9, 9.5] },
+      {
+        "id": "01894070",
+        "aluno": "Beatriz",
+        "idade": 20,
+        "notas": [9, 8.5, 9]
+      },
+      {
+        "id": "01895080",
+        "aluno": "Rafael",
+        "idade": 21,
+        "notas": [6, 7, 6.5]
+      },
+      {
+        "id": "01898110",
+        "aluno": "Marina",
+        "idade": 17,
+        "notas": [10, 9, 8.5]
+      }
+    ],
+    "portugues": [
+      { "id": "01891030", "aluno": "David", "idade": 18, "notas": [7.5, 8, 7] },
+      { "id": "01892040", "aluno": "Ana", "idade": 17, "notas": [9.5, 10, 9] },
+      { "id": "01893060", "aluno": "Lucas", "idade": 19, "notas": [6, 7, 8] },
+      {
+        "id": "01894070",
+        "aluno": "Beatriz",
+        "idade": 20,
+        "notas": [8, 8.5, 7.5]
+      },
+      { "id": "01895080", "aluno": "Rafael", "idade": 21, "notas": [5, 4, 6] },
+      {
+        "id": "01896090",
+        "aluno": "Juliana",
+        "idade": 18,
+        "notas": [7, 6, 7.5]
+      },
+      {
+        "id": "01897100",
+        "aluno": "Pedro",
+        "idade": 19,
+        "notas": [4.5, 5, 3.5]
+      },
+      { "id": "01898110", "aluno": "Marina", "idade": 17, "notas": [9, 8, 9.5] }
+    ],
+    "geografia": [
+      { "id": "01891030", "aluno": "David", "idade": 18, "notas": [6, 5.5, 7] },
+      { "id": "01893060", "aluno": "Lucas", "idade": 19, "notas": [8, 7.5, 9] },
+      { "id": "01895080", "aluno": "Rafael", "idade": 21, "notas": [7, 8, 6] },
+      {
+        "id": "01896090",
+        "aluno": "Juliana",
+        "idade": 18,
+        "notas": [5, 6.5, 6]
+      },
+      { "id": "01897100", "aluno": "Pedro", "idade": 19, "notas": [9.5, 9, 10] }
+    ],
+    "fisica": [
+      {
+        "id": "01891030",
+        "aluno": "David",
+        "idade": 18,
+        "notas": [8, 7.5, 6.5]
+      },
+      { "id": "01892040", "aluno": "Ana", "idade": 17, "notas": [7, 8, 7.5] },
+      { "id": "01893060", "aluno": "Lucas", "idade": 19, "notas": [3.5, 4, 5] },
+      {
+        "id": "01894070",
+        "aluno": "Beatriz",
+        "idade": 20,
+        "notas": [6.5, 7, 6]
+      },
+      { "id": "01897100", "aluno": "Pedro", "idade": 19, "notas": [5, 5.5, 6] },
+      {
+        "id": "01898110",
+        "aluno": "Marina",
+        "idade": 17,
+        "notas": [7.5, 8.5, 9]
+      }
+    ],
+    "biologia": [
+      { "id": "01892040", "aluno": "Ana", "idade": 17, "notas": [10, 9.5, 10] },
+      {
+        "id": "01894070",
+        "aluno": "Beatriz",
+        "idade": 20,
+        "notas": [5.5, 6, 7]
+      },
+      {
+        "id": "01895080",
+        "aluno": "Rafael",
+        "idade": 21,
+        "notas": [8, 7, 7.5]
+      },
+      { "id": "01896090", "aluno": "Juliana", "idade": 18, "notas": [6, 8, 7] },
+      { "id": "01897100", "aluno": "Pedro", "idade": 19, "notas": [2, 3, 4.5] }
+    ]
+  }
+}
