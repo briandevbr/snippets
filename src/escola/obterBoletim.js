@@ -1,17 +1,23 @@
 const ehTextoNaoVazio = (valor) =>
   typeof valor === "string" && valor.trim() !== "";
 
-const buscarChaveDisciplina = (disciplinas, textoBusca) => {
-  const chavesDisciplinas = Object.keys(disciplinas);
+const buscarDisciplina = (listaDisciplinas, textoBusca) => {
   const buscaNormalizada = textoBusca.trim().toLowerCase();
 
-  return chavesDisciplinas.find((chave) =>
-    chave.toLowerCase().startsWith(buscaNormalizada),
+  return listaDisciplinas.find((disciplina) =>
+    disciplina.id.trim().toLowerCase().startsWith(buscaNormalizada),
   );
 };
 
 const buscarAlunoPorId = (listaAlunos, idAluno) => {
   return listaAlunos.find((aluno) => String(aluno.id) === String(idAluno));
+};
+
+const buscarNotas = (listaNotas, idAluno, idDisciplina) => {
+  const registro = listaNotas.find(
+    (nota) => nota.alunoId === idAluno && nota.disciplinaId === idDisciplina,
+  );
+  return registro ? registro.valores : [];
 };
 
 const obterBoletimAluno = (
@@ -31,11 +37,11 @@ const obterBoletimAluno = (
       };
     }
 
-    const chaveDisciplinaEncontrada = buscarChaveDisciplina(
+    const disciplinaEncontrada = buscarDisciplina(
       bancoDadosEscola.disciplinas,
       entradaDisciplina,
     );
-    if (!chaveDisciplinaEncontrada) {
+    if (!disciplinaEncontrada) {
       return {
         erro: {
           codigo: "DISCIPLINA_INVALIDA",
@@ -44,9 +50,7 @@ const obterBoletimAluno = (
       };
     }
 
-    const alunosDaDisciplina =
-      bancoDadosEscola.disciplinas[chaveDisciplinaEncontrada];
-    const alunoAlvo = buscarAlunoPorId(alunosDaDisciplina, entradaIdAluno);
+    const alunoAlvo = buscarAlunoPorId(bancoDadosEscola.alunos, entradaIdAluno);
     if (!alunoAlvo) {
       return {
         erro: {
@@ -56,7 +60,11 @@ const obterBoletimAluno = (
       };
     }
 
-    const notasAluno = alunoAlvo.notas || [];
+    const notasAluno = buscarNotas(
+      bancoDadosEscola.notas,
+      alunoAlvo.id,
+      disciplinaEncontrada.id,
+    );
     if (notasAluno.length === 0) {
       return {
         erro: {
@@ -78,9 +86,9 @@ const obterBoletimAluno = (
     return {
       sucesso: {
         anoLetivo: bancoDadosEscola.configuracao.anoLetivo,
-        disciplina: chaveDisciplinaEncontrada,
+        disciplina: disciplinaEncontrada.id,
         id: entradaIdAluno,
-        aluno: alunoAlvo.aluno,
+        aluno: alunoAlvo.nome,
         idade: alunoAlvo.idade,
         notas: notasAluno,
         mediaFinal: parseFloat(mediaCalculada.toFixed(2)),
