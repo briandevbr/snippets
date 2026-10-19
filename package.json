@@ -19,6 +19,6 @@
   },
   "homepage": "https://github.com/briandevbr/snippets#readme",
   "devDependencies": {
-    "vitest": "^5.0.3"
+    "vitest": "^5.0.5"
   }
 }
