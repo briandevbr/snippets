@@ -39,3 +39,5 @@ const formatSentence = (message) => {
   }
   return result;
 };
+
+export default formatSentence;
