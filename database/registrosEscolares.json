@@ -1,158 +1,208 @@
 {
   "configuracao": { "mediaAprovacao": 7, "anoLetivo": 2026 },
-  "disciplinas": {
-    "matematica": [
-      { "id": "01891030", "aluno": "David", "idade": 18, "notas": [9, 8, 5] },
-      {
-        "id": "01892040",
-        "aluno": "Ana",
-        "idade": 17,
-        "notas": [10, 9.5, 8.5]
-      },
-      { "id": "01893060", "aluno": "Lucas", "idade": 19, "notas": [4, 5.5, 6] },
-      { "id": "01894070", "aluno": "Beatriz", "idade": 20, "notas": [7, 7, 7] },
-      {
-        "id": "01895080",
-        "aluno": "Rafael",
-        "idade": 21,
-        "notas": [3, 2.5, 4]
-      },
-      {
-        "id": "01896090",
-        "aluno": "Juliana",
-        "idade": 18,
-        "notas": [8, 9, 7.5]
-      },
-      { "id": "01897100", "aluno": "Pedro", "idade": 19, "notas": [0, 6, 5] },
-      {
-        "id": "01898110",
-        "aluno": "Marina",
-        "idade": 17,
-        "notas": [6.5, 7.5, 8]
-      }
-    ],
-    "ingles": [
-      { "id": "01891030", "aluno": "David", "idade": 18, "notas": [8.5, 7, 9] },
-      { "id": "01892040", "aluno": "Ana", "idade": 17, "notas": [9, 8, 10] },
-      { "id": "01893060", "aluno": "Lucas", "idade": 19, "notas": [5, 6, 4.5] },
-      { "id": "01894070", "aluno": "Beatriz", "idade": 20, "notas": [6, 7, 8] },
-      {
-        "id": "01896090",
-        "aluno": "Juliana",
-        "idade": 18,
-        "notas": [10, 10, 9.5]
-      },
-      {
-        "id": "01897100",
-        "aluno": "Pedro",
-        "idade": 19,
-        "notas": [7.5, 6.5, 7]
-      },
-      {
-        "id": "01898110",
-        "aluno": "Marina",
-        "idade": 17,
-        "notas": [5.5, 6, 6.5]
-      }
-    ],
-    "historia": [
-      { "id": "01891030", "aluno": "David", "idade": 18, "notas": [7, 6.5, 8] },
-      { "id": "01892040", "aluno": "Ana", "idade": 17, "notas": [8.5, 9, 9.5] },
-      {
-        "id": "01894070",
-        "aluno": "Beatriz",
-        "idade": 20,
-        "notas": [9, 8.5, 9]
-      },
-      {
-        "id": "01895080",
-        "aluno": "Rafael",
-        "idade": 21,
-        "notas": [6, 7, 6.5]
-      },
-      {
-        "id": "01898110",
-        "aluno": "Marina",
-        "idade": 17,
-        "notas": [10, 9, 8.5]
-      }
-    ],
-    "portugues": [
-      { "id": "01891030", "aluno": "David", "idade": 18, "notas": [7.5, 8, 7] },
-      { "id": "01892040", "aluno": "Ana", "idade": 17, "notas": [9.5, 10, 9] },
-      { "id": "01893060", "aluno": "Lucas", "idade": 19, "notas": [6, 7, 8] },
-      {
-        "id": "01894070",
-        "aluno": "Beatriz",
-        "idade": 20,
-        "notas": [8, 8.5, 7.5]
-      },
-      { "id": "01895080", "aluno": "Rafael", "idade": 21, "notas": [5, 4, 6] },
-      {
-        "id": "01896090",
-        "aluno": "Juliana",
-        "idade": 18,
-        "notas": [7, 6, 7.5]
-      },
-      {
-        "id": "01897100",
-        "aluno": "Pedro",
-        "idade": 19,
-        "notas": [4.5, 5, 3.5]
-      },
-      { "id": "01898110", "aluno": "Marina", "idade": 17, "notas": [9, 8, 9.5] }
-    ],
-    "geografia": [
-      { "id": "01891030", "aluno": "David", "idade": 18, "notas": [6, 5.5, 7] },
-      { "id": "01893060", "aluno": "Lucas", "idade": 19, "notas": [8, 7.5, 9] },
-      { "id": "01895080", "aluno": "Rafael", "idade": 21, "notas": [7, 8, 6] },
-      {
-        "id": "01896090",
-        "aluno": "Juliana",
-        "idade": 18,
-        "notas": [5, 6.5, 6]
-      },
-      { "id": "01897100", "aluno": "Pedro", "idade": 19, "notas": [9.5, 9, 10] }
-    ],
-    "fisica": [
-      {
-        "id": "01891030",
-        "aluno": "David",
-        "idade": 18,
-        "notas": [8, 7.5, 6.5]
-      },
-      { "id": "01892040", "aluno": "Ana", "idade": 17, "notas": [7, 8, 7.5] },
-      { "id": "01893060", "aluno": "Lucas", "idade": 19, "notas": [3.5, 4, 5] },
-      {
-        "id": "01894070",
-        "aluno": "Beatriz",
-        "idade": 20,
-        "notas": [6.5, 7, 6]
-      },
-      { "id": "01897100", "aluno": "Pedro", "idade": 19, "notas": [5, 5.5, 6] },
-      {
-        "id": "01898110",
-        "aluno": "Marina",
-        "idade": 17,
-        "notas": [7.5, 8.5, 9]
-      }
-    ],
-    "biologia": [
-      { "id": "01892040", "aluno": "Ana", "idade": 17, "notas": [10, 9.5, 10] },
-      {
-        "id": "01894070",
-        "aluno": "Beatriz",
-        "idade": 20,
-        "notas": [5.5, 6, 7]
-      },
-      {
-        "id": "01895080",
-        "aluno": "Rafael",
-        "idade": 21,
-        "notas": [8, 7, 7.5]
-      },
-      { "id": "01896090", "aluno": "Juliana", "idade": 18, "notas": [6, 8, 7] },
-      { "id": "01897100", "aluno": "Pedro", "idade": 19, "notas": [2, 3, 4.5] }
-    ]
-  }
+  "alunos": [
+    { "id": "01891030", "nome": "David", "idade": 18 },
+    { "id": "01892040", "nome": "Ana", "idade": 17 },
+    { "id": "01893060", "nome": "Lucas", "idade": 19 },
+    { "id": "01894070", "nome": "Beatriz", "idade": 20 },
+    { "id": "01895080", "nome": "Rafael", "idade": 21 },
+    { "id": "01896090", "nome": "Juliana", "idade": 18 },
+    { "id": "01897100", "nome": "Pedro", "idade": 19 },
+    { "id": "01898110", "nome": "Marina", "idade": 17 }
+  ],
+  "disciplinas": [
+    { "id": "matematica", "nome": "Matemática" },
+    { "id": "ingles", "nome": "Inglês" },
+    { "id": "historia", "nome": "História" },
+    { "id": "portugues", "nome": "Português" },
+    { "id": "geografia", "nome": "Geografia" },
+    { "id": "fisica", "nome": "Física" },
+    { "id": "biologia", "nome": "Biologia" }
+  ],
+  "notas": [
+    {
+      "alunoId": "01891030",
+      "disciplinaId": "matematica",
+      "valores": [9, 8, 5]
+    },
+    {
+      "alunoId": "01892040",
+      "disciplinaId": "matematica",
+      "valores": [10, 9.5, 8.5]
+    },
+    {
+      "alunoId": "01893060",
+      "disciplinaId": "matematica",
+      "valores": [4, 5.5, 6]
+    },
+    {
+      "alunoId": "01894070",
+      "disciplinaId": "matematica",
+      "valores": [7, 7, 7]
+    },
+    {
+      "alunoId": "01895080",
+      "disciplinaId": "matematica",
+      "valores": [3, 2.5, 4]
+    },
+    {
+      "alunoId": "01896090",
+      "disciplinaId": "matematica",
+      "valores": [8, 9, 7.5]
+    },
+    {
+      "alunoId": "01897100",
+      "disciplinaId": "matematica",
+      "valores": [0, 6, 5]
+    },
+    {
+      "alunoId": "01898110",
+      "disciplinaId": "matematica",
+      "valores": [6.5, 7.5, 8]
+    },
+    { "alunoId": "01891030", "disciplinaId": "ingles", "valores": [8.5, 7, 9] },
+    { "alunoId": "01892040", "disciplinaId": "ingles", "valores": [9, 8, 10] },
+    { "alunoId": "01893060", "disciplinaId": "ingles", "valores": [5, 6, 4.5] },
+    { "alunoId": "01894070", "disciplinaId": "ingles", "valores": [6, 7, 8] },
+    {
+      "alunoId": "01896090",
+      "disciplinaId": "ingles",
+      "valores": [10, 10, 9.5]
+    },
+    {
+      "alunoId": "01897100",
+      "disciplinaId": "ingles",
+      "valores": [7.5, 6.5, 7]
+    },
+    {
+      "alunoId": "01898110",
+      "disciplinaId": "ingles",
+      "valores": [5.5, 6, 6.5]
+    },
+    {
+      "alunoId": "01891030",
+      "disciplinaId": "historia",
+      "valores": [7, 6.5, 8]
+    },
+    {
+      "alunoId": "01892040",
+      "disciplinaId": "historia",
+      "valores": [8.5, 9, 9.5]
+    },
+    {
+      "alunoId": "01894070",
+      "disciplinaId": "historia",
+      "valores": [9, 8.5, 9]
+    },
+    {
+      "alunoId": "01895080",
+      "disciplinaId": "historia",
+      "valores": [6, 7, 6.5]
+    },
+    {
+      "alunoId": "01898110",
+      "disciplinaId": "historia",
+      "valores": [10, 9, 8.5]
+    },
+    {
+      "alunoId": "01891030",
+      "disciplinaId": "portugues",
+      "valores": [7.5, 8, 7]
+    },
+    {
+      "alunoId": "01892040",
+      "disciplinaId": "portugues",
+      "valores": [9.5, 10, 9]
+    },
+    {
+      "alunoId": "01893060",
+      "disciplinaId": "portugues",
+      "valores": [6, 7, 8]
+    },
+    {
+      "alunoId": "01894070",
+      "disciplinaId": "portugues",
+      "valores": [8, 8.5, 7.5]
+    },
+    {
+      "alunoId": "01895080",
+      "disciplinaId": "portugues",
+      "valores": [5, 4, 6]
+    },
+    {
+      "alunoId": "01896090",
+      "disciplinaId": "portugues",
+      "valores": [7, 6, 7.5]
+    },
+    {
+      "alunoId": "01897100",
+      "disciplinaId": "portugues",
+      "valores": [4.5, 5, 3.5]
+    },
+    {
+      "alunoId": "01898110",
+      "disciplinaId": "portugues",
+      "valores": [9, 8, 9.5]
+    },
+    {
+      "alunoId": "01891030",
+      "disciplinaId": "geografia",
+      "valores": [6, 5.5, 7]
+    },
+    {
+      "alunoId": "01893060",
+      "disciplinaId": "geografia",
+      "valores": [8, 7.5, 9]
+    },
+    {
+      "alunoId": "01895080",
+      "disciplinaId": "geografia",
+      "valores": [7, 8, 6]
+    },
+    {
+      "alunoId": "01896090",
+      "disciplinaId": "geografia",
+      "valores": [5, 6.5, 6]
+    },
+    {
+      "alunoId": "01897100",
+      "disciplinaId": "geografia",
+      "valores": [9.5, 9, 10]
+    },
+    {
+      "alunoId": "01891030",
+      "disciplinaId": "fisica",
+      "valores": [8, 7.5, 6.5]
+    },
+    { "alunoId": "01892040", "disciplinaId": "fisica", "valores": [7, 8, 7.5] },
+    { "alunoId": "01893060", "disciplinaId": "fisica", "valores": [3.5, 4, 5] },
+    { "alunoId": "01894070", "disciplinaId": "fisica", "valores": [6.5, 7, 6] },
+    { "alunoId": "01897100", "disciplinaId": "fisica", "valores": [5, 5.5, 6] },
+    {
+      "alunoId": "01898110",
+      "disciplinaId": "fisica",
+      "valores": [7.5, 8.5, 9]
+    },
+    {
+      "alunoId": "01892040",
+      "disciplinaId": "biologia",
+      "valores": [10, 9.5, 10]
+    },
+    {
+      "alunoId": "01894070",
+      "disciplinaId": "biologia",
+      "valores": [5.5, 6, 7]
+    },
+    {
+      "alunoId": "01895080",
+      "disciplinaId": "biologia",
+      "valores": [8, 7, 7.5]
+    },
+    { "alunoId": "01896090", "disciplinaId": "biologia", "valores": [6, 8, 7] },
+    {
+      "alunoId": "01897100",
+      "disciplinaId": "biologia",
+      "valores": [2, 3, 4.5]
+    }
+  ]
 }
