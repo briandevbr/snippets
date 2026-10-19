@@ -1,10 +1,8 @@
-import bancoDadosEscola from "./schoolRecords.json" with { type: "json" };
-
 const ehTextoNaoVazio = (valor) =>
   typeof valor === "string" && valor.trim() !== "";
 
-const buscarChaveDisciplina = (textoBusca) => {
-  const chavesDisciplinas = Object.keys(bancoDadosEscola.disciplinas);
+const buscarChaveDisciplina = (disciplinas, textoBusca) => {
+  const chavesDisciplinas = Object.keys(disciplinas);
   const buscaNormalizada = textoBusca.trim().toLowerCase();
 
   return chavesDisciplinas.find((chave) =>
@@ -16,7 +14,11 @@ const buscarAlunoPorId = (listaAlunos, idAluno) => {
   return listaAlunos.find((aluno) => String(aluno.id) === String(idAluno));
 };
 
-const obterBoletimAluno = (entradaDisciplina, entradaIdAluno) => {
+const obterBoletimAluno = (
+  bancoDadosEscola,
+  entradaDisciplina,
+  entradaIdAluno,
+) => {
   try {
     const possuiEntradaInvalida =
       !ehTextoNaoVazio(entradaDisciplina) || !ehTextoNaoVazio(entradaIdAluno);
@@ -29,7 +31,10 @@ const obterBoletimAluno = (entradaDisciplina, entradaIdAluno) => {
       };
     }
 
-    const chaveDisciplinaEncontrada = buscarChaveDisciplina(entradaDisciplina);
+    const chaveDisciplinaEncontrada = buscarChaveDisciplina(
+      bancoDadosEscola.disciplinas,
+      entradaDisciplina,
+    );
     if (!chaveDisciplinaEncontrada) {
       return {
         erro: {
